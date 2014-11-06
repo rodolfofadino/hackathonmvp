@@ -7,9 +7,25 @@ using YesterdayI.Models;
 namespace YesterdayI.Migrations
 {
     [ContextType(typeof(ApplicationDbContext))]
-    public class ApplicationDbContextModelSnapshot : ModelSnapshot
+    public partial class first : IMigrationMetadata
     {
-        public override IModel Model
+        string IMigrationMetadata.MigrationId
+        {
+            get
+            {
+                return "201411061831547_first";
+            }
+        }
+        
+        string IMigrationMetadata.ProductVersion
+        {
+            get
+            {
+                return "7.0.0-beta1-11402";
+            }
+        }
+        
+        IModel IMigrationMetadata.TargetModel
         {
             get
             {
